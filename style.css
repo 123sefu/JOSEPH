@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: o;
+    text-align: center;
+    background-image: url("me.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:  rgb(255, 255, 255);
+    
+}
+
+header {
+    background-color: #0f0092;
+    color: white;
+    padding: 50px 30px;
+    animation: fadeDown 1s ease;
+}
+
+nav {
+    padding: 20px;
+}
+
+ .nav-links a {
+      display: inline;
+      background-color: #ff0040;
+      color: white;
+      text-decoration: none;
+      padding: 10px 10px;
+      margin: 20px auto;
+      width: 200px;
+      border-radius: 10px;
+      font-size: 18px;
+      transition: 1000ms;
+    }
+
+    .nav-links a:hover {
+      background-color: white;
+      color: #ff0040;
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #ff0040;
+    }
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a :hover {
+    padding: 20px;
+    text-decoration: underline;
+    color: #ffd166;
+}
+
+section {
+    padding: 40px 20px;
+    animation: fadeUp 1s ease;
+}
+
+ul {
+    font-size: large;
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    background-color: #2106bd;
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+}
+
+nav a :hover {
+    background-color: #0a9396;
+    color: rgb(192, 189, 27);
+}
+
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.my-button {
+  background: linear-gradient(135deg, #ff0040, #ff7b00); /* background color/gradient */
+  color: white;
+  padding: 25px 30px;
+  font-size: 18px;
+  border: #222;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 1000ms ease;
+}
+
+/* Hover effect */
+.my-button:hover {
+  background: linear-gradient(135deg, #fff, #ff0040);
+  color: #ff0040;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 0, 64, 0.5);
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end; /* Moves image to the top left corner */
+  padding: 10px;
+}
+.circle-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;     /* Crop to fit inside circle */
+  border-radius: 100%;    /* Makes it a circle */
+  border:  solid #555; /* Optional border */
+}
